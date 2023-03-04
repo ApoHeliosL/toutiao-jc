@@ -1,6 +1,6 @@
 // .eslintrc.js
 module.exports = {
-  root: '',
+  root: true,
   env: {
     node: true,
   },
