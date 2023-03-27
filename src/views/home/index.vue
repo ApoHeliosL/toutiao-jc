@@ -86,13 +86,13 @@ export default {
   }
   .channer-tabs{
     /deep/.van-tabs__wrap {
-      // height: 41px;
-      // position: fixed;
-      // top:46px;
-      // left: 0;
-      // right: 0;
-      // z-index: 1;
-      margin-top: 46px;
+      height: 41px;
+      position: fixed;
+      top:46px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      // margin-top: 46px;
     }
     /deep/ .van-tab{
       border-right: 1px solid #edeff3;

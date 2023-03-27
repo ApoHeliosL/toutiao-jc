@@ -96,14 +96,14 @@ export default {
         this.$router.back()//先用这种方式 不太好
       }catch(err){
          //处理响应结果
-        console.log('登陆失败',err);
+        // console.log('登陆失败',err);
         this.$toast.fail('登录失败,手机号或验证码错误');
       }
     
      
     },
     onFailed(error){
-      console.log(error);
+      // console.log(error);
       if(error.errors[0]){
         this.$toast({
           message:error.errors[0].message,
@@ -118,8 +118,8 @@ export default {
       //请求发送验证码-用户接收短信-》输入验证码->请求登录
       this.isSendSmsLoading= true
       const res = await sendSms(this.user.mobile)
-      console.log(res);
-      console.log(validateResult);
+      // console.log(res);
+      // console.log(validateResult);
        //请求发送验证码-》显示倒计时-》隐藏发送按钮
        this.isCountDownShow = true;
 
@@ -131,7 +131,7 @@ export default {
       // 429 发送太频繁
       if(err&&err.response&&err.response.status==429){
         message= err.response.data.message
-        console.log(message);
+        // console.log(message);
       }else if(err.name = 'mobile'){
         message=err.message
       }else{

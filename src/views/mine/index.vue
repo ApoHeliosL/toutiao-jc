@@ -114,7 +114,7 @@ export default {
     try{
       const {data} = await getUserInfo()
       this.userInfo = data.data
-      console.log(data);
+      // console.log(data);
     }catch(err){
       this.$toast('获取数据失败,请稍后重试')
     }
